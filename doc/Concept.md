@@ -97,3 +97,10 @@ k3d може бути легко автоматизований за допом�
 
 - Стабільність роботи: Часом можуть виникати проблеми зі стабільністю роботи k3d, особливо при використанні на Windows або macOS.
 - Обмежена функціональність: k3d може мати обмежену функціональність порівняно з іншими інструментами, такими як Minikube або Kind, особливо щодо налаштування мережі або збереження конфігурації.
+
+### Characteristic
+
+| **Pros and Cons**                               | **Minikube**                                     | **Kind**                                         | **k3d**                                          |
+|--------------------------------------------------|--------------------------------------------------|--------------------------------------------------|--------------------------------------------------|
+| **Pros**                                      | + Easy to use<br>+ Suitable for local development and testing | + Suitable for local development and testing<br>+ Works within Docker containers<br>+ Possibility for local testing | + Suitable for local development and testing<br>+ Works within Docker containers<br>+ Fast cluster creation and testing |
+| **Cons**                                      | - Doubts about scalability<br>- Potential limitations | - Limited information on scalability<br>- Limited community documentation | - Limited documentation<br>- Potential scalability concerns |
