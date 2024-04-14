@@ -116,7 +116,7 @@ argocd-application-controller-0                     1/1     Running   0         
 - Ingress  
 - Port Forwarding 
 
-Скористаємось `Port Forwarding` за допомогою локального порта 8080. В команді ми посилаємось на сервіс `svc/argocd-server` який знаходиться в namespace `-n argocd`. Kubectl автоматично знайде endpoint сервісу та встановить переадресацію портів з локального порту 8080 на віддалений 443 
+Скористаємось `Port Forwarding` за допомогою локального порта 9090. В команді ми посилаємось на сервіс `svc/argocd-server` який знаходиться в namespace `-n argocd`. Kubectl автоматично знайде endpoint сервісу та встановить переадресацію портів з локального порту 9090 на віддалений 443 
 ```bash
 $ k port-forward svc/argocd-server -n argocd 9090:443&
 [1] 95905
