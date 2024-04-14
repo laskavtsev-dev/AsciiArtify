@@ -163,11 +163,11 @@ aZFV9YSdwoIkUCqV
 ![SYNCHRONIZE](.img/argo_status.png)  
 
 8. Прослідкуємо за реакцією ArgoCD на зміни в репозиторію.
-- Змінимо в файлі репозиторію https://github.com/vit-um/go-demo-app/blob/master/helm/values.yaml тип шлюзу з `NodePort` на `LoadBalancer` (останній рядок файлу)  
+- Змінимо в файлі репозиторію https://github.com/laskavtsev-dev/go-demo-app/blob/master/helm/values.yaml тип шлюзу з `NodePort` на `LoadBalancer` (останній рядок файлу)  
 
 ![out of sync](.img/argo_outofsync.png)
 
-```bath
+```bash
 $ k get svc -n demo
 NAME               TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)                                                 AGE
 demo-nats          ClusterIP   None            <none>        4222/TCP,6222/TCP,8222/TCP,7777/TCP,7422/TCP,7522/TCP   31m
