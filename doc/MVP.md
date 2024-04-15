@@ -13,7 +13,7 @@ $ k --port-forward svc/abmassador 8088:80&
 ```bash
 $ curl http://localhost:8088
 ```
-#### 3) Підставляємо додатку наш малюнок і отримуємо бажаний результат в ascii graphics:
+#### 4) Підставляємо додатку наш малюнок і отримуємо бажаний результат в ascii graphics:
 ```bash
 $ curl -F "image=@trident.img" http://localhost:8088/img/
 ```
