@@ -15,7 +15,7 @@ $ curl http://localhost:8088
 ```
 #### 4) Підставляємо додатку наш малюнок і отримуємо бажаний результат в ascii graphics:
 ```bash
-$ curl -F "image=@trident.img" http://localhost:8088/img/
+$ curl -F "image=@trident.img" localhost:8088/img/
 ```
 
 ### Демонстрація роботи інтерфейса ArgoCD і його реакції на зміни вихідного коду
