@@ -5,10 +5,19 @@
 ```bash
 $ k get svc
 ```
-#### 2) Нас цікавить сервіс із назвою ambassador. Активуємо для нього порт:
+#### 2) Нас цікавить сервіс із назвою ambassador. Активуємо для нього порт 8088:
 ```bash
-$ k get svc
+$ k --port-forward svc/abmassador 8088:80&
 ```
+#### 3) Перевіряємо відповідь порту
+```bash
+$ curl http://localhost:8088
+```
+#### 3) Підставляємо додатку наш малюнок і отримуємо бажаний результат в ascii graphics:
+```bash
+$ curl -F "image=@trident.img" http://localhost:8088/img/
+```
+
 ### Демонстрація роботи інтерфейса ArgoCD і його реакції на зміни вихідного коду
 
 [![Video](.img/MVP.PNG)](https://youtu.be/jwjv506laSo)
