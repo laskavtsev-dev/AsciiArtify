@@ -7,7 +7,7 @@ $ k get svc
 ```
 #### 2) Нас цікавить сервіс із назвою ambassador. Активуємо для нього порт 8088:
 ```bash
-$ k port-forward svc/abmassador 8088:80&
+$ k port-forward svc/ambassador 8088:80&
 ```
 #### 3) Перевіряємо відповідь порту
 ```bash
